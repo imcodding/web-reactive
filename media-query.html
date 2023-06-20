@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body { background: red; color: #fff; }
+        h1::before {content: "1. "}
+        h1::after {content: ' - 기본';}
+        /* 화면 너비가 0 ~ 1280px : 데스크탑 */
+        @media (max-width: 1280px) {
+            body {background: orange;}
+            h1::before {content: "2. "}
+            h1::after {content: ' - 1025px ~ 1280px';}
+        }
+        /* 화면 너비가 0 ~ 1024px : 데스크탑 */
+        @media (max-width: 1024px) {
+            body {background: yellow;}
+            h1::before {content: "3. "}
+            h1::after {content: ' - 961px ~ 1024px';}
+        }
+        /* 화면 너비가 0 ~ 960px : 노트북 */
+        @media (max-width: 960px) {
+            body {background: green;}
+            h1::before {content: "4. "}
+            h1::after {content: ' - 768px ~ 960px';}
+        }
+        /* 화면 너비가 0 ~ 768px : 테블릿 */
+        @media (max-width: 768px) {
+            body {background: blue;}
+            h1::before {content: "5. "}
+            h1::after {content: ' - 577px ~ 768px';}
+        }
+        /* 화면 너비가 0 ~ 576px : 모바일 */
+        @media (max-width: 576px) {
+            body {background: purple;}
+            h1::before {content: "6. "}
+            h1::after {content: ' - 0 ~ 576px';}
+        }
+    </style>
+</head>
+<body>
+    <h1>미디어 쿼리</h1>
+</body>
+</html>
