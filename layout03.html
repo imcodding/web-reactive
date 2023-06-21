@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>layout03</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    #wrap {width: 100%;}
+    header {width: 100%; height: 150px; background: red;}
+    aside {width: 30%; height: 600px; background: orange; float: left;}
+    .article1 {width: 70%; height: 200px; background: yellow; float: left;}
+    .article2 {width: 70%; height: 200px; background: green; float: left;}
+    .article3 {width: 70%; height: 200px; background: blue; float: left;}
+    footer {width: 100%; height: 150px; background: violet; clear: both;}
+
+    @media (max-width: 1220px) {
+      .article1 {height: 300px;}
+      .article2 {height: 300px;}
+      .article3 {width: 100%;}
+    }
+
+    @media (max-width: 768px) {
+      aside {width: 100%; height: 200px;}
+      .article1 {width: 50%;}
+      .article2 {width: 50%;}
+      .article3 {width: 100%;}
+    }
+
+    @media (max-width: 480px) {
+      header {height: 200px;}
+      aside {width: 100%; height: 200px;}
+      .article1 {width: 100%; height: 200px;}
+      .article2 {width: 100%; height: 200px;}
+      .article3 {width: 100%; height: 200px;}
+      footer {height: 200px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header></header>
+    <aside></aside>
+    <article class="article1"></article>
+    <article class="article2"></article>
+    <article class="article3"></article>
+    <footer></footer>
+  </div>
+</body>
+</html>
