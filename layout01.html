@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout</title>
+  <style>
+    * {padding: 0; margin: 0;}
+    #wrap {width: 1200px; margin: 0 auto;}
+    header {width: 100%; height: 150px; background: red;}
+    aside {float: left; width: 30%; height: 700px; background: orange;}
+    section {float: left; width: 70%; height: 700px; background: yellow;}
+    footer {clear: both; width: 100%; height: 150px; background: green;}
+
+    @media (max-width: 1220px) {
+      #wrap {width: 95%;}
+    }
+
+    @media (max-width: 768px) {
+      #wrap {width: 100%;}
+    }
+
+    @media (max-width: 480px) {
+      #wrap {width: 100%;}
+      header {height: 300px;}
+      aside {float: none; height: 300px; width: 100%;}
+      section {float: none; height: 300px; width: 100%;}
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header></header>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+  </div>
+</body>
+</html>
